@@ -6,11 +6,11 @@
 #    By: angerard <angerard@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/10 11:01:19 by angerard          #+#    #+#              #
-#    Updated: 2025/02/10 11:34:35 by angerard         ###   ########.fr        #
+#    Updated: 2025/02/10 11:42:07 by angerard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-Name = zombie
+NAME = zombie
 SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 OBJ = $(SRC:.cpp=.o)
 CXX = g++

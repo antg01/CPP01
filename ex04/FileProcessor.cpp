@@ -6,7 +6,7 @@
 /*   By: angerard <angerard@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 12:36:45 by angerard          #+#    #+#             */
-/*   Updated: 2025/02/12 12:46:26 by angerard         ###   ########.fr       */
+/*   Updated: 2025/04/15 12:56:44 by angerard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,12 @@ bool FileProcessor::processFile()
         return false;
     }
 
+    if (_s1.empty())
+    {
+        std::cerr << "Error: s1 cannot be empty" << std::endl;
+        return false;
+    }
+    
     std::string line;
     while (std::getline(inputFile, line))
     {
@@ -44,5 +50,5 @@ bool FileProcessor::processFile()
 
     inputFile.close();
     outputFile.close();
-    return false;
+    return true;
 }

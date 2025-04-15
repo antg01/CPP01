@@ -6,7 +6,7 @@
 /*   By: angerard <angerard@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 12:48:06 by angerard          #+#    #+#             */
-/*   Updated: 2025/02/10 12:52:33 by angerard         ###   ########.fr       */
+/*   Updated: 2025/04/15 11:06:42 by angerard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ class Zombie
         void announce() const;
 };
 
-Zombie *zombieHorde(int n, std::string name);
+Zombie *zombieHorde(int N, std::string name);
 
 #endif
